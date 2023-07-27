@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace NumberUtilities
+namespace Leniton.NumberUtilities
 {
     public class NumberUtil
     {
