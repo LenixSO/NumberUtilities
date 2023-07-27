@@ -1,0 +1,13 @@
+{
+  "name": "com.leniton.numberutils",
+  "version": "1.0.0",
+  "displayName": "Number Utilities",
+  "description": "formulas that manipulate numbers",
+  "unity": "2022.3",
+  "keywords": [],
+  "author": {
+    "name": "Leniton",
+    "email": ""
+  },
+  "dependencies": {}
+}
