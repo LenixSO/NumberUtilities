@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Leniton.NumberUtilities
+namespace Lenix.NumberUtilities
 {
     public static class NumberUtil
     {
@@ -28,16 +28,16 @@ namespace Leniton.NumberUtilities
             }
             return bits.ToArray();
         }
-
-        float NormalizedDistance(float value, float target, float range)
+        public static float SineWave(float time, float amplitude, float frequency, float offset = 0) => amplitude * (Mathf.Sin(2 * Mathf.PI * frequency * time + offset));
+        public static float NormalizedDistance(float value, float target, float range)
         {
             return Mathf.Clamp01(1 - Mathf.Abs(value - target) / range);
         }
-        float WithinTargetDistance(float value, float min, float max)
+        public static float WithinTargetDistance(float value, float min, float max)
         {
             return (value - min) / (max - min);
         }
-        float DetermineAlphaValue(float value, float min, float max, float range)
+        public static float DetermineAlphaValue(float value, float min, float max, float range)
         {
             float alphaValue = NormalizedDistance(value, min, range) +
                     Mathf.Clamp01(NormalizedDistance(value, max, range) +

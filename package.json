@@ -1,6 +1,6 @@
 {
   "name": "com.leniton.numberutils",
-  "version": "0.0.1",
+  "version": "0.1.4",
   "displayName": "Number Utilities",
   "description": "formulas that manipulate numbers",
   "unity": "2022.3",
