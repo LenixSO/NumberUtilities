@@ -26,7 +26,7 @@ namespace Lenix.NumberUtilities
         {
             int[] bits = SeparateBits(bytes);
             for (int i = 0; i < bits.Length; i++)
-                if (ContainsBytes(bits[i], value))
+                if (ContainsBytes(value, bits[i]))
                     return true;
             return false;
         }
